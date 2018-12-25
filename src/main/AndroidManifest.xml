@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.a.demo_news">
+    package="com.example.a.news">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:networkSecurityConfig="@xml/network_security_config"
@@ -10,14 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".News.NewsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WebActivity"></activity>
+        <activity android:name=".Details.WebActivity"></activity>
     </application>
 
 </manifest>
